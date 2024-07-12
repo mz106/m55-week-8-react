@@ -2,16 +2,14 @@ import { useContext, useState } from "react";
 
 import { MessageContext } from "../../providers/messageProvider/MessageProvider";
 
+import { changeHandler } from "../../utils/helpers";
+
 import "./MessageContainer.css";
 
 const MessageContainer = () => {
   const [newMessage, setNewMessage] = useState("");
 
   const { message, updateMessage } = useContext(MessageContext);
-
-  const changeHandler = (e, setter) => {
-    setter(e.target.value);
-  };
 
   return (
     <div className="wrapper">
