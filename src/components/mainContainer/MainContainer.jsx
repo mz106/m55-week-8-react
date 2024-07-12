@@ -1,11 +1,13 @@
 import React from "react";
 
+import MessageContainer from "../messageContainer/MessageContainer";
+
 import "./MainContainer.css";
 
 const MainContainer = () => {
   return (
     <div className="wrapper">
-      <h2>Main Container</h2>
+      <MessageContainer />
     </div>
   );
 };
