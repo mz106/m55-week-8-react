@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import { MessageProvider } from "../../providers/messageProvider/MessageProvider";
+import { AdminProvider } from "../../providers/adminProvider/AdminProvider";
 
 import "./Layout.css";
 
@@ -11,9 +12,11 @@ const Layout = ({ children }) => {
     <>
       <div className="layout">
         <MessageProvider>
-          <Header />
-          {children}
-          <Footer />
+          <AdminProvider>
+            <Header />
+            {children}
+            <Footer />
+          </AdminProvider>
         </MessageProvider>
       </div>
     </>
