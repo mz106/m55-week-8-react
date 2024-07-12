@@ -1,11 +1,14 @@
 import "./App.css";
 
+import Layout from "./components/layout/Layout";
+import MainContainer from "./components/mainContainer/MainContainer";
+
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello Books</h1>
-      </div>
+      <Layout>
+        <MainContainer />
+      </Layout>
     </>
   );
 }
